@@ -9,10 +9,10 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-typedef long long ll;
-typedef unsigned long long ull;
-typedef vector<int> vi; 
-typedef pair<int,int> ii; 
+#typedef long long ll;
+#typedef unsigned long long ull;
+#typedef vector<int> vi; 
+#typedef pair<int,int> ii; 
 #define sz(a) int((a).size()) 
 #define pb push_back 
 #define all(c) (c).begin(),(c).end() 
@@ -59,7 +59,8 @@ int main(){
 			}
 		}
 		else{
-			cout<<stack_min.back()<<endl;
+			if(!stack_min.empty())
+				cout<<stack_min.back()<<endl;
 		}
 	}
 	return 0;
